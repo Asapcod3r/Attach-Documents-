@@ -23,7 +23,7 @@
             padding: 30px;
             border: 1px solid #ccc;
             border-radius: 8px;
-            width: 75%;
+            width: 70%;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
 
@@ -103,29 +103,73 @@
             max-height: 45px;
             margin-bottom: 10px;
         }
+        .h1{
+            font-size: x-small;
+            text-align: center;
+
+        }
+        .header1{
+            font-size: large;
+            text-align: center;
+
+        }
     </style>
 </head>
 <body>
-    <div class="header2">TFG</div>
-
-    <div id="logo">
-        <img src="https://i.imgur.com/TgWBcYB.png" alt="Logo">
-    </div>
-
-    <div class="header2">6-S</div>
-
+    
     <div class="header1">Share Documents</div>
 
-    <form id="uploadForm" method="post" enctype="multipart/form-data" action="http://10.32.228.145:8084/upload">
+    <form id="uploadForm" method="post" enctype="multipart/form-data" action="http://10.32.228.150:8084/upload">
         <div class="form-group">
             <label for="email">Recipient Email:</label>
             <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class ="h1">
+        <h1>or</h1>
+        </div>
+
+        <div class="form-group">
+            <label for="assignee">Assignee ID:</label>
+            <select id="assignee" name="assignee" required>
+                <option value="">Select Assignee</option>
+                <option value="BakhonaS@tfg.co.za">Bakhona Sithembu</option>
+                <option value="OratileM@tfg.co.za">Oratile Motlogeloa</option>
+                <option value="RaymondM@tfg.co.za">Raymond Manaka</option>
+                <option value="MolekoD@tfg.co.za">Moleko Ditira</option>
+                <option value="KaraboL@tfg.co.za">Karabo Leshabane</option>
+                <option value="MandlakayiseV@tfg.co.za">Mandlakayise Vilakazi</option>
+                <option value="ShadrackM@tfg.co.za">Shadrack Motha</option>
+                <option value="JonasM@tfg.co.za">Jonas Maruping</option>
+                <option value="ThaboTj@tfg.co.za">Thabo Tjamela</option>
+                <option value="ValeryS@tfg.co.za">Valery Sangweni</option>
+                <option value="TshepoP@tfg.co.za">Tshepo Phetla</option>
+                <option value="MbalenhleD@tfg.co.za">Mbalenhle Dlongolo</option>
+                <option value="OarabileN@tfg.co.za">Oarabile Nicodemus</option>
+                <option value="KgaboM@tfg.co.za">Kgabo Maea</option>
+                <option value="KarenHo@tfg.co.za ">Karen Tanya Hoker</option>
+                <option value="MaliekD@tfg.co.za">Maliek Davids</option>
+                <option value="RallyN@tfg.co.za">Rally Ndhlovu</option>
+                <option value="MlungisiMb@tfg.co.za">Mlungisi Mbatha</option>
+                <option value="Trevor.mafundza@style.rtt.co.za">Trevor Mafundza</option>
+                <option value="NomvulaM@tfg.com">Nomvula Mantikwe</option>
+                <option value="Dr.M@tfg.co.za">Philip Manaka</option>
+                <option value="BongileM@tfg.co.za">Bongile Mashudu</option>
+                <option value="InnocentM@tfg.co.za">Innocent Mkhize</option>
+                <option value="Mseango@tcsunits.co.za">Rose Seango</option>
+                <option value="s3rv3rtfg@outlook.com">Munangiwa Ravhura</option>
+                <option value="moghauMok@tfg.co.za">Mohao Mokolopa</option>
+                <option value="mahlogonoloA@tfg.co.za">Aphane Mahlonolo</option>
+              
+            </select>
         </div>
 
         <div class="form-group">
             <label for="file">Choose File:</label>
             <input type="file" id="file" name="file" required>
         </div>
+
+        
 
         <div class="file-buttons">
             <button class="file-button" onclick="sendFile('pdf')">
@@ -143,7 +187,7 @@
             <button class="file-button" onclick="sendFile('xls')">
                 <img src="https://i.imgur.com/n8arJAl.png" alt="XLS">
                 <span>Send XLS</span>
-            </button>
+            </button>>>
             <button class="file-button" onclick="sendFile('audio')">
                 <img src="https://i.imgur.com/6UvkY68.png" alt="Audio">
                 <span>Send Audio</span>
